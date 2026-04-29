@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Кондиционеры со склада в Алматы. Установка в день заказа. Оригинальные кондиционеры Almacom с гарантией 36 месяцев. Быстрая доставка и профессиональный монтаж.">
+<title>Qwent Climate — Кондиционеры со склада. Установка в день заказа</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#" class="logo" onclick="closePage()">
+      <div class="logo-icon">❄</div>
+      Qwent Climate
+    </a>
+    <nav>
+      <a href="#catalog" onclick="closeNav()">Каталог</a>
+      <a href="#installation" onclick="closeNav()">Установка</a>
+      <a href="#features" onclick="closeNav()">Преимущества</a>
+      <a href="#reviews" onclick="closeNav()">Отзывы</a>
+      <a href="#guarantee" onclick="closeNav()">Гарантия</a>
+      <a href="#contacts" onclick="closeNav()">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+77066100888" class="btn-phone">📞 +7 (706) 610-08-88</a>
+      <button class="btn-cta" onclick="openOrderPopup()">Заказать</button>
+      <div class="hamburger" onclick="openNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav id="mobile-nav">
+  <button class="mobile-nav-close" onclick="closeNav()">✕</button>
+  <a href="#catalog" onclick="closeNav()">Каталог</a>
+  <a href="#installation" onclick="closeNav()">Установка</a>
+  <a href="#features" onclick="closeNav()">Преимущества</a>
+  <a href="#reviews" onclick="closeNav()">Отзывы</a>
+  <a href="#guarantee" onclick="closeNav()">Гарантия</a>
+  <a href="#contacts" onclick="closeNav()">Контакты</a>
+  <a href="tel:+77066100888" style="color:var(--blue)">📞 +7 (706) 610-08-88</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  
+  <div class="hero-particles"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Доставка и установка сегодня
+      </div>
+      <h1 class="hero-title">
+        Кондиционеры<br>со склада в <span>Алматы</span>
+      </h1>
+      <p class="hero-sub">Оригинальные кондиционеры Almacom с гарантией и установкой сегодня. Сертифицированные монтажники. Выезд в течение 2 часов.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">
+          ❄ Выбрать кондиционер
+        </button>
+        <button class="btn-outline" onclick="openOrderPopup()">
+          💬 Получить консультацию
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">500<span>+</span></div>
+          <div class="stat-label">Установок в год</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">36<span>мес</span></div>
+          <div class="stat-label">Гарантия</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span>от </span>2ч</div>
+          <div class="stat-label">Выезд мастера</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-3d">
+        <div class="hero-ac-placeholder">
+          <div class="hero-ac-icon">🌡️</div>
+          <div style="color:rgba(255,255,255,.8);font-size:14px;font-weight:600">Almacom ACH-12QR</div>
+          <div style="color:rgba(255,255,255,.5);font-size:12px">Серия REGULAR 2025</div>
+        </div>
+        <div class="hero-price-badge">
+          <div>
+            <div class="hero-price-label">Розничная стоимость</div>
+            <div class="hero-price-val">182 458 ₸</div>
+          </div>
+          <button class="btn-add" onclick="openPopupForHero()" style="padding:10px 16px;font-size:13px">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="section-label">Почему мы</div>
+    <h2 class="section-title" style="color:white">Почему выбирают нас</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.6)">Мы работаем без посредников — напрямую с официальным дистрибьютором Almacom в Казахстане</p>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Установка в день заказа</div>
+        <div class="feature-desc">Сертифицированные монтажники выезжают в течение 2 часов после подтверждения заказа. Работаем 7 дней в неделю.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🏭</div>
+        <div class="feature-title">Товар со склада</div>
+        <div class="feature-desc">Большой ассортимент в наличии на складе в Алматы. Не ждите неделями — забирайте сегодня или получайте с доставкой.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">✅</div>
+        <div class="feature-title">Гарантия 36 месяцев</div>
+        <div class="feature-desc">Официальная гарантия производителя на все кондиционеры Almacom. Бесплатный сервис в гарантийный период.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">💎</div>
+        <div class="feature-title">Оригинальная продукция</div>
+        <div class="feature-desc">Только сертифицированные оригинальные кондиционеры. Никаких подделок — прямые поставки от официального дистрибьютора.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">💰</div>
+        <div class="feature-title">Цены без наценок</div>
+        <div class="feature-desc">Розничные цены от официального дистрибьютора. Работаем напрямую — экономьте на посредниках.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-title">Профессиональный монтаж</div>
+        <div class="feature-desc">Квалифицированные специалисты с опытом 5+ лет. Установка по всем нормативам с чистовой отделкой.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog">
+  <div class="container">
+    <div class="catalog-header">
+      <div>
+        <div class="section-label">Ассортимент</div>
+        <h2 class="section-title">Каталог кондиционеров</h2>
+        <p class="section-sub">Настенные и напольные кондиционеры Almacom. Все модели в наличии на складе в Алматы</p>
+      </div>
+    </div>
+
+    <div class="filter-bar reveal">
+      <div class="filter-group">
+        <div class="filter-label">Тип</div>
+        <select class="filter-select" id="filterType" onchange="applyFilters()">
+          <option value="">Все типы</option>
+          <option value="wall">Настенные</option>
+          <option value="floor">Напольные</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <div class="filter-label">Площадь</div>
+        <select class="filter-select" id="filterArea" onchange="applyFilters()">
+          <option value="">Любая</option>
+          <option value="small">до 25 м²</option>
+          <option value="medium">25–45 м²</option>
+          <option value="large">45–70 м²</option>
+          <option value="xlarge">70+ м²</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <div class="filter-label">Цена, ₸</div>
+        <select class="filter-select" id="filterPrice" onchange="applyFilters()">
+          <option value="">Любая</option>
+          <option value="0-150000">до 150 000</option>
+          <option value="150000-250000">150 000 — 250 000</option>
+          <option value="250000-400000">250 000 — 400 000</option>
+          <option value="400000-999999999">от 400 000</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <div class="filter-label">Сортировка</div>
+        <select class="filter-select" id="filterSort" onchange="applyFilters()">
+          <option value="">По умолчанию</option>
+          <option value="price-asc">Цена: дешевле</option>
+          <option value="price-desc">Цена: дороже</option>
+        </select>
+      </div>
+      <button class="filter-btn" onclick="resetFilters()">Сбросить</button>
+      <div class="filter-count" id="filterCount"></div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="load-more-wrap" id="loadMoreWrap">
+      <button class="btn-load-more" onclick="loadMore()">Показать ещё</button>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-works">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:0">
+      <div class="section-label" style="justify-content:center">Процесс</div>
+      <h2 class="section-title">Как мы работаем</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">От заявки до прохлады — за один день</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num">1</div>
+        <div class="step-title">Выбираете модель</div>
+        <div class="step-desc">Выбираете кондиционер из каталога или звоните для консультации</div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">2</div>
+        <div class="step-title">Оформляете заказ</div>
+        <div class="step-desc">Заполняете заявку с именем и телефоном — займёт 30 секунд</div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">3</div>
+        <div class="step-title">Мы перезваниваем</div>
+        <div class="step-desc">Менеджер связывается в течение 15 минут, уточняет детали</div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">4</div>
+        <div class="step-title">Мастер приезжает</div>
+        <div class="step-desc">Наш специалист приедет сегодня и установит кондиционер</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALLATION -->
+<section id="installation">
+  <div class="container">
+    <div class="install-grid">
+      <div>
+        <div class="section-label" style="color:var(--accent)">Монтаж</div>
+        <h2 class="section-title" style="color:white">Установка в день заказа</h2>
+        <p style="color:rgba(255,255,255,0.6);font-size:17px;margin-bottom:0;line-height:1.7">Профессиональный монтаж кондиционера нашими сертифицированными специалистами. Гарантия на работу 12 месяцев.</p>
+        <div class="install-list">
+          <div class="install-item reveal">
+            <div class="install-icon">⏱️</div>
+            <div>
+              <div class="install-item-title">Выезд за 2 часа</div>
+              <div class="install-item-desc">Мастер приедет в течение 2 часов после подтверждения заказа</div>
+            </div>
+          </div>
+          <div class="install-item reveal">
+            <div class="install-icon">🔧</div>
+            <div>
+              <div class="install-item-title">Профессиональный монтаж</div>
+              <div class="install-item-desc">Установка по всем техническим нормам, аккуратно и чисто</div>
+            </div>
+          </div>
+          <div class="install-item reveal">
+            <div class="install-icon">🧹</div>
+            <div>
+              <div class="install-item-title">Уборка после работ</div>
+              <div class="install-item-desc">Мастер убирает за собой весь мусор и строительную пыль</div>
+            </div>
+          </div>
+          <div class="install-item reveal">
+            <div class="install-icon">📋</div>
+            <div>
+              <div class="install-item-title">Инструктаж по эксплуатации</div>
+              <div class="install-item-desc">Объясним как пользоваться кондиционером и ухаживать за ним</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="install-cta reveal">
+        <div style="font-size:56px;margin-bottom:16px">❄️</div>
+        <div class="install-cta-title">Стоимость установки</div>
+        <div class="install-cta-price">от 35 000 ₸</div>
+        <p>Стандартная установка настенного кондиционера. Цена зависит от сложности монтажа и удалённости.</p>
+        <button class="btn-primary" style="width:100%;justify-content:center;font-size:16px" onclick="openOrderPopup()">
+          ⚡ Установка сегодня
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR MODELS -->
+<section id="popular" style="background:#F7F9FF">
+  <div class="container">
+    <div class="section-label">Топ продаж</div>
+    <h2 class="section-title">Популярные модели</h2>
+    <p class="section-sub">Самые востребованные кондиционеры нашего каталога</p>
+    <div class="products-grid" id="popularGrid" style="margin-top:40px"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div style="text-align:center">
+      <div class="section-label" style="justify-content:center">Отзывы</div>
+      <h2 class="section-title">Что говорят клиенты</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Более 500 довольных клиентов в Алматы</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Заказал кондиционер утром — вечером уже работал. Мастера приехали вовремя, установили аккуратно, всё объяснили. Цена честная, без скрытых доплат.</div>
+        <div class="review-author">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name">Асхат Бейсенов</div>
+            <div class="review-date">Апрель 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Брала Almacom ACH-09QR на спальню. Работает тихо, охлаждает отлично. Гарантия 3 года — это очень важно. Спасибо за оперативность и профессионализм!</div>
+        <div class="review-author">
+          <div class="review-avatar">М</div>
+          <div>
+            <div class="review-name">Мадина Сейтказиева</div>
+            <div class="review-date">Март 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Офис 70 кв.м., взяли напольный ACP-24I. Консультант подобрал именно то что нужно. Установка заняла 3 часа. Всё чисто, аккуратно. Рекомендую!</div>
+        <div class="review-author">
+          <div class="review-avatar">Е</div>
+          <div>
+            <div class="review-name">Ерлан Джаксыбеков</div>
+            <div class="review-date">Май 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Третий год подряд беру кондиционеры только у вас. Надёжный магазин, оригинальный товар, гарантия работает. В этом году взял QUALITY INVERTER — очень доволен.</div>
+        <div class="review-author">
+          <div class="review-avatar">Н</div>
+          <div>
+            <div class="review-name">Нурлан Хасенов</div>
+            <div class="review-date">Июнь 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">Хороший сервис. Кондиционер ACH-12QF привезли быстро. Небольшая задержка с мастером — но предупредили заранее. Зато сделали всё качественно. Спасибо!</div>
+        <div class="review-author">
+          <div class="review-avatar">Г</div>
+          <div>
+            <div class="review-name">Гульнара Ахметова</div>
+            <div class="review-date">Февраль 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Купил инверторный ACH-07QI. Тихий как мышь, экономит электричество. Разница с обычным кондиционером — небо и земля. Цена немного выше, но оно того стоит!</div>
+        <div class="review-author">
+          <div class="review-avatar">Д</div>
+          <div>
+            <div class="review-name">Дамир Сагинтаев</div>
+            <div class="review-date">Июль 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section id="guarantee">
+  <div class="container">
+    <div style="text-align:center">
+      <div class="section-label" style="justify-content:center">Надёжность</div>
+      <h2 class="section-title">Гарантии и сервис</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Покупайте с уверенностью — мы отвечаем за каждый кондиционер</p>
+    </div>
+    <div class="guarantee-grid">
+      <div class="guarantee-card reveal">
+        <div class="guarantee-icon">🏆</div>
+        <div class="guarantee-title">Гарантия 36 месяцев</div>
+        <div class="guarantee-desc">Официальная гарантия производителя Almacom на все кондиционеры. Бесплатный ремонт в гарантийный период.</div>
+      </div>
+      <div class="guarantee-card reveal">
+        <div class="guarantee-icon">🔄</div>
+        <div class="guarantee-title">Возврат и обмен</div>
+        <div class="guarantee-desc">Возврат товара в течение 14 дней при сохранении товарного вида. Обмен на другую модель без доплат.</div>
+      </div>
+      <div class="guarantee-card reveal">
+        <div class="guarantee-icon">🛠️</div>
+        <div class="guarantee-title">Сервисное обслуживание</div>
+        <div class="guarantee-desc">Ежегодное техническое обслуживание. Чистка, заправка фреоном, проверка всех систем.</div>
+      </div>
+      <div class="guarantee-card reveal">
+        <div class="guarantee-icon">📞</div>
+        <div class="guarantee-title">Поддержка 7/7</div>
+        <div class="guarantee-desc">Круглосуточная поддержка по телефону и мессенджерам. Ответим на любой вопрос об эксплуатации.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="container">
+    <div class="section-label">Связь</div>
+    <h2 class="section-title">Контакты</h2>
+    <p class="section-sub">Свяжитесь с нами любым удобным способом</p>
+    <div class="contacts-grid">
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Адрес</div>
+            <div class="contact-val">г. Алматы, ул. Ратушного 70А, оф. 304</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Телефон</div>
+            <div class="contact-val"><a href="tel:+77066100888">+7 (706) 610-08-88</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-val"><a href="https://wa.me/77012345678">+7 (706) 610-08-88</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div class="contact-label">Режим работы</div>
+            <div class="contact-val">Пн–Вс: 9:00 — 21:00</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val"><a href="mailto:info@qwent-climate.kz">info@qwent-climate.kz</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card reveal">
+        <div class="contact-form-title">Быстрая консультация</div>
+        <div class="form-group">
+          <label class="form-label">Ваше имя</label>
+          <input type="text" class="form-input" id="contactName" placeholder="Как вас зовут?">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Телефон</label>
+          <input type="tel" class="form-input" id="contactPhone" placeholder="+7 (___) ___-__-__">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Сообщение</label>
+          <textarea class="form-input form-textarea" id="contactMsg" placeholder="Опишите ваш запрос..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;font-size:16px" onclick="submitContactForm()">
+          📨 Отправить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-icon">❄</div>
+          Qwent Climate
+        </div>
+        <p class="footer-desc">Официальный дилер Almacom в Алматы. Кондиционеры со склада с установкой в день заказа. Гарантия 36 месяцев.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/77012345678" class="social-btn">💬</a>
+          <a href="tel:+77066100888" class="social-btn">📞</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Каталог</div>
+        <div class="footer-links">
+          <a href="#catalog">Настенные кондиционеры</a>
+          <a href="#catalog">Напольные кондиционеры</a>
+          <a href="#catalog">Серия REGULAR</a>
+          <a href="#catalog">Серия INVERTER</a>
+          <a href="#catalog">Серия LUXURY</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Услуги</div>
+        <div class="footer-links">
+          <a href="#installation">Установка кондиционеров</a>
+          <a href="#guarantee">Гарантийный сервис</a>
+          <a href="#guarantee">Техническое обслуживание</a>
+          <a href="#contacts">Консультация</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Контакты</div>
+        <div class="footer-links">
+          <a href="tel:+77066100888">+7 (706) 610-08-88</a>
+          <a href="mailto:info@qwent-climate.kz">info@qwent-climate.kz</a>
+          <a href="#">г. Алматы, ул. Ратушного 70А</a>
+          <a href="#">Пн–Вс: 9:00 — 21:00</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 Qwent-Climate. Все права защищены.</div>
+      <div>Официальный дилер Almacom в Казахстане</div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING NOTIFICATION -->
+<div class="float-notif" id="floatNotif">
+  <button class="float-notif-close" onclick="document.getElementById('floatNotif').style.display='none'">✕</button>
+  <div class="float-notif-icon">✅</div>
+  <div class="float-notif-text">
+    <strong>Установка сегодня доступна!</strong>
+    <span>Успейте оформить заказ до 18:00</span>
+  </div>
+</div>
+
+<!-- FIXED ACTIONS -->
+<div class="fixed-actions">
+  <button class="fixed-btn btn-up" id="btnUp" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Наверх">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <a href="tel:+77066100888" class="fixed-btn btn-call" title="Позвонить">
+    <i class="fas fa-phone-alt"></i>
+  </a>
+  
+  <a href="https://wa.me/77066100888" class="fixed-btn btn-wa" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+<!-- ORDER POPUP -->
+<div class="overlay" id="orderOverlay" onclick="closeOverlay(event,'orderOverlay')">
+  <div class="popup" onclick="event.stopPropagation()">
+    <button class="popup-close" onclick="closePopup('orderOverlay')">✕</button>
+    <div class="popup-title">Оформить заказ</div>
+    <div class="popup-sub">Заполните форму — мы перезвоним в течение 15 минут</div>
+    <div class="popup-product" id="popupProductBlock">
+      <div style="font-size:48px;margin-right:8px">❄️</div>
+      <div>
+        <div class="popup-product-name" id="popupProductName">Выбранная модель</div>
+        <div class="popup-product-price" id="popupProductPrice"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Ваше имя *</label>
+      <input type="text" class="form-input" id="orderName" placeholder="Иван Иванов">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Телефон *</label>
+      <input type="tel" class="form-input" id="orderPhone" placeholder="+7 (___) ___-__-__">
+    </div>
+    <button class="btn-primary" style="width:100%;justify-content:center;font-size:16px;margin-top:8px" onclick="submitOrder()">
+      ⚡ Заказать с установкой сегодня
+    </button>
+  </div>
+</div>
+
+<!-- THANKS POPUP -->
+<div class="overlay" id="thanksOverlay" onclick="closeOverlay(event,'thanksOverlay')">
+  <div class="popup" onclick="event.stopPropagation()">
+    <button class="popup-close" onclick="closePopup('thanksOverlay')">✕</button>
+    <div class="popup-thanks">
+      <div class="thanks-icon">🎉</div>
+      <div class="thanks-title">Спасибо!</div>
+      <p class="thanks-desc">Мы установим кондиционер сегодня.<br>Наш менеджер свяжется с вами в течение 15 минут для уточнения деталей.</p>
+      <button class="btn-primary" style="margin:28px auto 0;padding:14px 32px" onclick="closePopup('thanksOverlay')">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT PAGE -->
+<div id="product-page">
+  <div class="product-page-inner">
+    <button class="product-page-back" onclick="closePage()">← Вернуться в каталог</button>
+    <div class="product-page-grid" id="productPageContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
